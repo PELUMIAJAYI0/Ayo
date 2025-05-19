@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cefran's Lingerie</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Cefran's Lingerie</div>
+        <div class="nav-links">
+            <a href="#products">Products</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="cta-button" onclick="window.location.href='https://wa.me/2347013488832'">Order Now</button>
+    </nav>
+
+    <section class="hero">
+        <h1>Unbeatable Comfort. Unmatched Style.</h1>
+        <p>Explore premium lingerie, cotton boxers, and fun designs that express your bold personality — all at
+            student-friendly prices!</p>
+        <button class="hero-btn" onclick="scrollToSection('products')">Browse Products</button>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About the Brand</h2>
+                <p>
+                    At <strong>Cefran's Lingerie</strong>, we're redefining confidence through comfort and class. Born
+                    from a student's dream, we create bold, breathable, and affordable underwear for all. Whether you're
+                    into cotton boxers or daring designs — each piece reflects YOU.
+                </p>
+                <button class="ceo-btn" onclick="window.location.href='ceo.html'">👤 Meet Our CEO</button>
+            </div>
+            <div class="about-image">
+                <img src="./_MG_2410.jpg" alt="About Cefran's Lingerie" />
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" id="products">
+        <h2>Our Products</h2>
+        <p class="products-tagline">Feel confident, look bold. Explore our top picks loved by students and trendsetters!
+        </p>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <label>Filter by:</label>
+            <select id="filterSelect" onchange="filterProducts()">
+                <option value="all">All</option>
+                <option value="bra">Bras</option>
+                <option value="boxer">Boxers</option>
+                <option value="print">Playful Prints</option>
+            </select>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card" data-category="bra">
+                <span class="badge hot">Best Seller</span>
+                <img src="./_MG_2410.jpg" alt="Elegant Lace Bra" />
+                <h3>Elegant Lace Bra</h3>
+                <div class="rating">★★★★★</div>
+                <p>Soft, supportive, and effortlessly chic. A must-have for everyday glam.</p>
+                <span class="price">₦3,500</span>
+                <button onclick="orderNow()">Order Now</button>
+                <button class="quick-view-btn"
+                    onclick="showQuickView('Elegant Lace Bra', 'Soft, supportive, and effortlessly chic.', '₦3,500')">Quick
+                    View</button>
+            </div>
+
+            <div class="product-card" data-category="boxer">
+                <span class="badge new">New</span>
+                <img src="./_MG_2410.jpg" alt="Classic Cotton Boxers" />
+                <h3>Classic Cotton Boxers</h3>
+                <div class="rating">★★★★☆</div>
+                <p>Ultra-comfy boxers that breathe. Your skin will thank you.</p>
+                <span class="price">₦2,800</span>
+                <button onclick="orderNow()">Order Now</button>
+                <button class="quick-view-btn"
+                    onclick="showQuickView('Classic Cotton Boxers', 'Ultra-comfy and breathable.', '₦2,800')">Quick
+                    View</button>
+            </div>
+
+            <div class="product-card" data-category="print">
+                <span class="badge hot">Hot</span>
+                <img src="./_MG_2410.jpg" alt="Playful Prints" />
+                <h3>Playful Prints</h3>
+                <div class="rating">★★★★★</div>
+                <p>Express your bold side with vibrant and fun underwear designs.</p>
+                <span class="price">₦3,200</span>
+                <button onclick="orderNow()">Order Now</button>
+                <button class="quick-view-btn"
+                    onclick="showQuickView('Playful Prints', 'Bold and colorful designs.', '₦3,200')">Quick
+                    View</button>
+            </div>
+        </div>
+
+        <!-- Quick View Modal -->
+        <div id="quickViewModal" class="quick-view-modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeQuickView()">&times;</span>
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <p><strong id="modalPrice"></strong></p>
+                <button onclick="orderNow()">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Testimonials Section ================= -->
+    <section class="testimonials-section" id="testimonials">
+        <h2>What Students Are Saying</h2>
+        <p class="section-tagline">Trusted by students who care about comfort and confidence.</p>
+
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p class="quote">"Honestly, this is the best bra I've ever owned. Comfortable and stylish – 10/10!"</p>
+                <span class="name">– Zainab, UNILAG</span>
+            </div>
+            <div class="testimonial">
+                <p class="quote">"The boxers are amazing. I even referred 3 friends – we all love it!"</p>
+                <span class="name">– Emeka, OAU</span>
+            </div>
+            <div class="testimonial">
+                <p class="quote">"As a plus-size girl, I was skeptical, but the fit and support blew me away."</p>
+                <span class="name">– Blessing, FUTA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FAQs Section ================= -->
+    <section class="faq-section" id="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question">Do you deliver to all Nigerian campuses?</button>
+            <div class="faq-answer">Yes, we deliver nationwide, including all major campuses with secure drop-off
+                points.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What sizes are available?</button>
+            <div class="faq-answer">We offer sizes from XS to 3XL. Our sizing guide helps you choose your perfect fit.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Can I return or exchange my order?</button>
+
+            <div class="faq-answer">Yes. We offer a 7-day return policy for unworn items in original packaging.</div>
+        </div>
+    </section>
+
+    <!-- ================= Referral & Discounts Section ================= -->
+    <section class="discounts-section" id="referral">
+        <h2>Student Discounts & Referral Rewards</h2>
+        <p class="section-tagline">Get ₦500 off your first order and earn ₦1,000 for every referral!</p>
+        <div class="discount-card">
+            <p><strong>🎉 Student Discount:</strong> Use code <code>STUDENT500</code> at checkout to get ₦500 off.</p>
+            <p><strong>👯 Referral Program:</strong> Share your unique link. When a friend buys, you both get rewarded!
+            </p>
+            <button onclick="referNow()">Start Referring</button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
