@@ -161,6 +161,7 @@
      }
  }
 
+ /* ABOUT SECTION */
  .about-section {
      padding: 5rem 2rem;
      background: linear-gradient(to right, #fff0e5, #ffe3d8);
@@ -381,7 +382,7 @@
     color: #999;
 } */
 
-/* Section Styling */
+/* PRODUCT SECTION */
 .products-section {
     padding: 4rem 2rem;
     background: #fdfdfd;
@@ -626,6 +627,7 @@
     }
 }
 
+/* TESTIMONIAL, FAG and DISCOUNT SECTIONS */
 .testimonials-section, .faq-section, .discounts-section {
     padding: 4rem 2rem;
     background: #f9f9f9;
@@ -719,76 +721,8 @@
     cursor: pointer;
   }
 
-  .footer {
-  background: #1a1a1a;
-  color: #fff;
-  padding: 3rem 1rem 1rem;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.footer-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.footer-logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #f37335;
-}
-
-.footer-brand p {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links ul li {
-  margin-bottom: 0.5rem;
-}
-
-.footer-links ul li a {
-  color: #ccc;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-links ul li a:hover {
-  color: #f37335;
-}
-
-.footer-contact p {
-  margin: 0.3rem 0;
-}
-
-.footer-social .social-icons a {
-  margin-right: 0.5rem;
-  color: #f37335;
-  font-size: 1.3rem;
-  transition: transform 0.3s;
-}
-
-.footer-social .social-icons a:hover {
-  transform: scale(1.2);
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  border-top: 1px solid #333;
-  padding-top: 1rem;
-}
-
-.contact-section {
+  /* CONTACT SECTION */
+  .contact-section {
   background: #fff9f3;
   padding: 4rem 1rem;
   text-align: center;
@@ -954,3 +888,75 @@
     opacity: 1;
   }
 }
+
+
+  /* FOOTER SECTION */
+  .footer {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 3rem 1rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f37335;
+}
+
+.footer-brand p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #f37335;
+}
+
+.footer-contact p {
+  margin: 0.3rem 0;
+}
+
+.footer-social .social-icons a {
+  margin-right: 0.5rem;
+  color: #f37335;
+  font-size: 1.3rem;
+  transition: transform 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+
