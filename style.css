@@ -636,6 +636,22 @@
     to { opacity: 1; }
   }
 
+  @keyframes fadeInUpCards {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reason-card, .size-card {
+  animation: fadeInUpCards 1s ease forwards;
+  opacity: 0;
+}
+
 
  /* TESTIMONIAL, FAG and DISCOUNT SECTIONS */
  .testimonials-section,
