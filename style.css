@@ -254,6 +254,42 @@
    }
  }
 
+ /* Why choose us section */
+ .why-boldwear {
+  background: #fefefe;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.why-boldwear span {
+  color: #f37335;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.reason-card {
+  background: #fff4ef;
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.reason-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f37335;
+}
+
 
 
  /* @keyframes fadeIn {
@@ -547,6 +583,59 @@
      font-size: 0.95rem;
    }
  }
+
+ /* AI size guide section */
+ .ai-size-guide {
+    background: linear-gradient(to right, #f37335, #fdc830);
+    color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    animation: fadeIn 1s ease-in;
+  }
+  .qa-container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    color: #333;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  .qa-step {
+    display: none;
+    margin-bottom: 2rem;
+  }
+  .qa-step.active {
+    display: block;
+    animation: slideIn 0.5s ease;
+  }
+  .qa-step select,
+  .qa-step input {
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+  }
+  .size-result {
+    display: none;
+    background: #fff;
+    color: #f37335;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    font-weight: bold;
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
 
  /* TESTIMONIAL, FAG and DISCOUNT SECTIONS */
  .testimonials-section,

@@ -2,15 +2,16 @@
 <html lang="en">
 
 <head>
- <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cefran's Lingerie</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cefran's Lingerie</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
 
 <body>
 
@@ -51,6 +52,36 @@
             </div>
         </div>
     </section>
+
+    <!-- ================= Why Choose Us Section ================= -->
+    <section class="why-boldwear">
+        <h2>Why Choose <span>BoldWear</span>?</h2>
+        <div class="reasons-grid">
+            <div class="reason-card">
+                <i class="icon">🎯</i>
+                <h4>Designed for Students</h4>
+                <p>We understand your lifestyle — BoldWear is made for flexibility, movement, and confidence on campus.
+                </p>
+            </div>
+            <div class="reason-card">
+                <i class="icon">🧵</i>
+                <h4>Unmatched Comfort</h4>
+                <p>Our fabrics are soft, breathable, and chosen with your comfort in mind — all day, every day.</p>
+            </div>
+            <div class="reason-card">
+                <i class="icon">💸</i>
+                <h4>Affordable</h4>
+                <p>Style shouldn't break the bank. Get premium quality at student-friendly prices.</p>
+            </div>
+            <div class="reason-card">
+                <i class="icon">🔥</i>
+                <h4>Confidence Boost</h4>
+                <p>Feel bold and empowered every time you wear our pieces. You’re not just dressed — you’re BoldWear-d.
+                </p>
+            </div>
+        </div>
+    </section>
+
 
     <!-- ================= Products Section ================= -->
     <section class="products-section" id="products">
@@ -142,6 +173,53 @@
             </div>
         </div>
     </section>
+
+    <!-- ================= AI SIZE GUIDE Section ================= -->
+    <section class="ai-size-guide" id="size-guide">
+        <h2>Find Your Perfect Fit</h2>
+        <p>Answer a few quick questions and let BoldWear's AI help you choose the perfect size.</p>
+
+        <div class="qa-container">
+            <div class="qa-step active" data-step="1">
+                <p>👤 Who are you shopping for?</p>
+                <select id="genderSelect" onchange="handleGenderSelect()">
+                    <option value="">Choose one...</option>
+                    <option value="female">Female (Bra)</option>
+                    <option value="male">Male (Boxer)</option>
+                </select>
+            </div>
+
+            <div class="qa-step" data-step="2" id="femaleQuestion1">
+                <p>📏 What's your band size (under bust in inches)?</p>
+                <input type="number" id="bandSize" placeholder="e.g. 32" onchange="nextFemaleStep(2)" />
+            </div>
+
+            <div class="qa-step" data-step="3" id="femaleQuestion2">
+                <p>🎯 What's your bust measurement (in inches)?</p>
+                <input type="number" id="bustSize" placeholder="e.g. 36" onchange="showFemaleSizeResult()" />
+            </div>
+
+            <div class="qa-step" data-step="2" id="maleQuestion1">
+                <p>📏 What's your waist measurement (in inches)?</p>
+                <input type="number" id="waistSize" placeholder="e.g. 32" onchange="nextMaleStep(2)" />
+            </div>
+
+            <div class="qa-step" data-step="3" id="maleQuestion2">
+                <p>👕 How do you like your boxers to fit?</p>
+                <select id="fitPreference" onchange="showMaleSizeResult()">
+                    <option value="">Choose one...</option>
+                    <option value="snug">Snug</option>
+                    <option value="relaxed">Relaxed</option>
+                </select>
+            </div>
+
+            <div class="size-result" id="sizeResult">
+                <h3>Your Recommended Size:</h3>
+                <p id="resultText">Calculating...</p>
+            </div>
+        </div>
+    </section>
+
 
     <!-- ================= FAQs Section ================= -->
     <section class="faq-section" id="faqs">
