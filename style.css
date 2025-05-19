@@ -385,7 +385,7 @@
 /* PRODUCT SECTION */
 .products-section {
     padding: 4rem 2rem;
-    background: #fdfdfd;
+    background: linear-gradient(to right, #fff6e5, #ffe3d8);
     font-family: 'Segoe UI', sans-serif;
     color: #333;
 }
@@ -630,7 +630,7 @@
 /* TESTIMONIAL, FAG and DISCOUNT SECTIONS */
 .testimonials-section, .faq-section, .discounts-section {
     padding: 4rem 2rem;
-    background: #f9f9f9;
+    background: linear-gradient(to right, #fff0e5, #ffe3d8);
     text-align: center;
   }
 
@@ -723,7 +723,7 @@
 
   /* CONTACT SECTION */
   .contact-section {
-  background: #fff9f3;
+  background: linear-gradient(to right, #fff0e5, #ffe3d8);
   padding: 4rem 1rem;
   text-align: center;
   animation: fadeInUp 1s ease-in-out;
@@ -892,7 +892,7 @@
 
   /* FOOTER SECTION */
   .footer {
-  background: #1a1a1a;
+  background:  #1A1A1A;
   color: #fff;
   padding: 3rem 1rem 1rem;
   font-family: 'Segoe UI', sans-serif;
