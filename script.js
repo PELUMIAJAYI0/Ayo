@@ -52,4 +52,16 @@ function referNow() {
     alert("Start referring and earning! Share your link with friends now.");
 }
 
+function submitContactForm(event) {
+    event.preventDefault();
+    alert("Thanks for reaching out! We'll get back to you shortly.");
+    event.target.reset();
+}
+
+function submitNewsletter(event) {
+    event.preventDefault();
+    alert("🎉 You're in! Thanks for subscribing to BoldWear.");
+    event.target.reset();
+}
+
 
